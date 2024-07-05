@@ -110,7 +110,7 @@ export default function Index() {
 
             console.log('S3: ', S3);
 
-            const Textract = await axios.post('/api/extract', S3)
+            const Textract = await axios.post('https://dictaminacion.saptiva.com/api/upload', S3)
                 .then(res => {
                     const pages: any[] = res.data.data
 
