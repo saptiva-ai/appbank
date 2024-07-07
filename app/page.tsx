@@ -42,7 +42,6 @@ const phaseMapper: any = {
 
 export default function Index() {
   const [dictum, setDictum] = useState<any>();
-  const [numPages, setNumPages] = useState<number>();
   const [processing, setProcessing] = useState(false);
   const [uploads, setUploads] = useState<any>();
   const [modal, setModal] = useState<any>();
@@ -587,13 +586,6 @@ export default function Index() {
                               <p className={styles.PrefaceLabel}>
                                 Dictaminación
                               </p>
-                              <Image
-                                className={styles.PrefaceLogo}
-                                src="/logo.png"
-                                width={492}
-                                height={300}
-                                alt="Logo"
-                              />
                             </div>
                           </div>
                           <div className={styles.DocumentContent}>

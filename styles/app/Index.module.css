@@ -1,279 +1,279 @@
 .container {
-    @apply w-full h-screen flex flex-wrap content-start bg-neutral-50 py-20;
+  @apply w-full h-screen flex flex-wrap content-start bg-neutral-50 py-20;
 }
 
-    .content {
-        @apply w-5/6 h-full max-w-[1536px] mx-auto flex flex-wrap content-start gap-8;
-    }
+.content {
+  @apply w-5/6 h-full max-w-[1536px] mx-auto flex flex-wrap content-start gap-8;
+}
 
-        .S1Container {
-            @apply px-[0.75rem] pb-[0.75rem] bg-red-600 overflow-clip h-full flex-1 border border-neutral-100 rounded-xl shadow-xl shadow-red-200 flex flex-col;
-        }
+.S1Container {
+  @apply px-[0.75rem] pb-[0.75rem] bg-teal-600 overflow-clip h-full flex-1 border border-neutral-100 rounded-xl shadow-xl shadow-teal-200 flex flex-col max-w-[40%];
+}
 
-            .S1Header {
-                @apply py-5 flex flex-nowrap content-center gap-3;
-            }
+.S1Header {
+  @apply py-5 flex flex-nowrap content-center gap-3;
+}
 
-                .S1Svg {
-                    @apply self-center ml-auto stroke-white h-6 stroke-[2];
-                }
+.S1Svg {
+  @apply self-center ml-auto stroke-white h-6 stroke-[2];
+}
 
-                .S1Title {
-                    @apply self-center mr-auto font-display font-semibold text-white text-xl text-center;
-                }
+.S1Title {
+  @apply self-center mr-auto font-display font-semibold text-white text-xl text-center;
+}
 
-            .S1Content {
-                @apply gap-4 relative overflow-clip mx-auto rounded-lg bg-white flex-grow w-full flex-1 flex flex-wrap p-4 content-start;
-            }
+.S1Content {
+  @apply gap-4 relative overflow-clip mx-auto rounded-lg bg-white flex-grow w-full flex-1 flex flex-wrap p-4 content-start;
+}
 
-                .processing {
-                    @apply w-full gap-2 flex flex-nowrap content-center;
-                }
+.processing {
+  @apply w-full gap-2 flex flex-nowrap content-center;
+}
 
-                    .processingLabel {
-                        @apply ml-auto text-lg self-center font-display font-semibold text-red-600
-                    }
+.processingLabel {
+  @apply ml-auto text-lg self-center font-display font-semibold text-teal-600;
+}
 
-                    .processingSvg {
-                        @apply mr-auto self-center w-5 h-5 stroke-[1.75] stroke-red-600 animate-spin;
-                    }
+.processingSvg {
+  @apply mr-auto self-center w-5 h-5 stroke-[1.75] stroke-teal-600 animate-spin;
+}
 
-                .S1PDF {
-                    @apply mt-4
-                }
-                
-                .S1Input {
-                    @apply relative gap-4 w-full min-h-[5rem] p-[2rem] flex flex-wrap content-center rounded-lg justify-center border-2 border-neutral-300 border-dashed;
-                }
+.S1PDF {
+  @apply mt-4;
+}
 
-                    .S1InputSvg {
-                        @apply self-center h-8 stroke-[1.75] stroke-neutral-400;
-                    }
-                    
-                    .S1InputLabel {
-                        @apply self-center leading-5 flex-1 font-display font-semibold text-neutral-400;
-                    }
+.S1Input {
+  @apply relative gap-4 w-full min-h-[5rem] p-[2rem] flex flex-wrap content-center rounded-lg justify-center border-2 border-neutral-300 border-dashed;
+}
 
-                    .S1InputField {
-                        @apply absolute opacity-0 w-full h-full
-                    }
+.S1InputSvg {
+  @apply self-center h-8 stroke-[1.75] stroke-neutral-400;
+}
 
-                .S1Files {
-                    @apply h-[71.5%] overflow-y-scroll w-full flex flex-wrap content-start gap-4;
-                }
+.S1InputLabel {
+  @apply self-center leading-5 flex-1 font-display font-semibold text-neutral-400;
+}
 
-                    .S1File {
-                        @apply transition ease-in-out duration-150 hover:border-red-200 hover:shadow-red-600/20 select-none gap-y-2 font-display w-full flex flex-wrap content-start rounded-lg bg-white border border-neutral-200 shadow-lg shadow-neutral-950/5 px-[1rem] pt-[0.75rem] pb-[0.5rem];
-                    }
+.S1InputField {
+  @apply absolute opacity-0 w-full h-full;
+}
 
-                        .S1FileHeader {
-                            @apply gap-2 w-full flex flex-nowrap content-start;
-                        }
+.S1Files {
+  @apply h-[71.5%]   overflow-y-scroll w-full flex flex-wrap content-start gap-4;
+}
 
-                            .S1FileName {
-                                @apply self-center whitespace-nowrap w-min truncate font-semibold text-neutral-500;
-                            }
+.S1File {
+  @apply transition ease-in-out duration-150 hover:border-teal-200 hover:shadow-teal-600/20 select-none gap-y-2 font-display w-full flex flex-wrap content-start rounded-lg bg-white border border-neutral-200 shadow-lg shadow-neutral-950/5 px-[1rem] pt-[0.75rem] pb-[0.5rem];
+}
 
-                            .S1FileTypes {
-                                @apply ml-auto self-center w-min whitespace-nowrap truncate border border-neutral-200 rounded-[0.25rem] px-1 py-[0.125rem] text-neutral-600 font-bold text-sm;
-                            }
+.S1FileHeader {
+  @apply gap-2 w-full flex flex-nowrap content-start;
+}
 
-                                .S1FileType {
-                                    @apply normal-case;
-                                }
+.S1FileName {
+  @apply self-center whitespace-nowrap w-min truncate font-semibold text-neutral-500;
+}
 
-                        .S1FileProgress {
-                            @apply w-full rounded-full h-[0.35rem] bg-neutral-200;
-                        }
+.S1FileTypes {
+  @apply ml-auto self-center w-min whitespace-nowrap truncate border border-neutral-200 rounded-[0.25rem] px-1 py-[0.125rem] text-neutral-600 font-bold text-sm;
+}
 
-                            .S1ProgressBar {
-                                @apply rounded-full h-full;
-                            }
+.S1FileType {
+  @apply normal-case;
+}
 
-                        .S1FileFooter {
-                            @apply w-full flex flex-nowrap content-start;
-                        }
+.S1FileProgress {
+  @apply w-full rounded-full h-[0.35rem] bg-neutral-200;
+}
 
-                        .S1FileType {
-                            @apply uppercase font-semibold text-neutral-400;
-                        }
+.S1ProgressBar {
+  @apply rounded-full h-full;
+}
 
-                        .S1FilePhase {
-                            @apply ml-auto w-min flex flex-nowrap content-start gap-x-2;
-                        }
+.S1FileFooter {
+  @apply w-full flex flex-nowrap content-start;
+}
 
-                            .S1PhaseDot {
-                                @apply self-center rounded-full w-[0.3rem] h-[0.3rem];
-                            }
+.S1FileType {
+  @apply uppercase font-semibold text-neutral-400;
+}
 
-                            .S1PhaseLabel {
-                                @apply text-sm self-center font-display font-semibold whitespace-nowrap;
-                            }
+.S1FilePhase {
+  @apply ml-auto w-min flex flex-nowrap content-start gap-x-2;
+}
 
-                .submit {
-                    @apply absolute bottom-[0.7rem] mx-auto left-0 right-0 self-end w-[96%] bg-red-600 py-2 rounded-[0.25rem] font-display text-white font-semibold;
-                }
+.S1PhaseDot {
+  @apply self-center rounded-full w-[0.3rem] h-[0.3rem];
+}
 
-                .questions {
-                    @apply w-full h-full flex flex-wrap content-start gap-4 overflow-y-scroll;
-                }
+.S1PhaseLabel {
+  @apply text-sm self-center font-display font-semibold whitespace-nowrap;
+}
 
-                    .questionContainer {
-                        @apply select-none transition ease-in-out duration-150 cursor-pointer hover:border-red-200 hover:shadow-red-600/20 gap-4 flex flex-wrap font-display shadow-md shadow-black/5 overflow-clip w-full px-5 py-4 border border-neutral-100 rounded-[0.25rem];
-                    }
+.submit {
+  @apply absolute bottom-[0.7rem] mx-auto left-0 right-0 self-end w-[96%] bg-teal-600 py-2 rounded-[0.25rem] font-display text-white font-semibold;
+}
 
-                        .questionSvg {
-                            @apply self-start w-8 h-full stroke-[1.75] stroke-red-600;
-                        }
+.questions {
+  @apply w-full h-2/4 flex flex-wrap content-start gap-4 overflow-y-scroll;
+}
 
-                        .questionText {
-                            @apply flex-1 flex flex-wrap content-start;
-                        }
+.questionContainer {
+  @apply select-none transition ease-in-out duration-150 cursor-pointer hover:border-teal-200 hover:shadow-teal-600/20 gap-4 flex flex-wrap font-display shadow-md shadow-black/5 overflow-clip w-full px-5 py-4 border border-neutral-100 rounded-[0.25rem];
+}
 
-                            .questionTitle {
-                                @apply w-full whitespace-normal text-xl text-red-600 font-bold self-center;
-                            }
+.questionSvg {
+  @apply self-start w-8 h-full stroke-[1.75] stroke-teal-600;
+}
 
-                            .questionResponse {
-                                @apply w-full text-neutral-400 text-sm font-semibold;
-                            }
+.questionText {
+  @apply flex-1 flex flex-wrap content-start;
+}
+
+.questionTitle {
+  @apply w-full whitespace-normal text-xl text-teal-600 font-bold self-center;
+}
+
+.questionResponse {
+  @apply w-full text-neutral-400 text-sm font-semibold;
+}
 
 .S3Item {
-    @apply transition ease-in-out duration-150 cursor-pointer hover:border-red-200 hover:shadow-red-600/20 font-display w-full flex flex-wrap content-start px-4 py-4 border border-neutral-200 shadow-md shadow-neutral-950/5 rounded-lg
+  @apply transition ease-in-out duration-150 cursor-pointer hover:border-teal-200 hover:shadow-teal-600/20 font-display w-full flex flex-wrap content-start px-4 py-4 border border-neutral-200 shadow-md shadow-neutral-950/5 rounded-lg;
 }
 
-    .S3ItemHeader {
-        @apply w-full flex flex-wrap content-start gap-4;
-    }
+.S3ItemHeader {
+  @apply w-full flex flex-wrap content-start gap-4;
+}
 
-        .S3HeaderText {
-            @apply relative flex-1 flex flex-wrap content-start whitespace-nowrap overflow-clip;
-        }
+.S3HeaderText {
+  @apply relative flex-1 flex flex-wrap content-start whitespace-nowrap overflow-clip;
+}
 
-            .S3ItemType {
-                @apply w-full font-semibold text-neutral-400 text-sm;
-            }
+.S3ItemType {
+  @apply w-full font-semibold text-neutral-400 text-sm;
+}
 
-            .S3ItemName {
-                @apply w-full font-extrabold text-neutral-600 text-lg leading-6
-            }
+.S3ItemName {
+  @apply w-full font-extrabold text-neutral-600 text-lg leading-6;
+}
 
-            .S3ItemFade {
-                @apply absolute w-[5rem] h-full top-0 right-0 bg-gradient-to-r from-transparent to-white
-            }
+.S3ItemFade {
+  @apply absolute w-[5rem] h-full top-0 right-0 bg-gradient-to-r from-transparent to-white;
+}
 
-        .S3HeaderButton {
-            @apply stroke-neutral-300 hover:stroke-red-600 transition ease-in-out duration-150 w-11 h-11 bg-white hover:bg-red-100 rounded-md;
-        }
+.S3HeaderButton {
+  @apply stroke-neutral-300 hover:stroke-red-600 transition ease-in-out duration-150 w-11 h-11 bg-white hover:bg-red-100 rounded-md;
+}
 
-            .S3ButtonSvg {
-                @apply self-center mx-auto stroke-[2.5] w-[1.5rem] h-[1.5rem];
-            }
+.S3ButtonSvg {
+  @apply self-center mx-auto stroke-[2.5] w-[1.5rem] h-[1.5rem];
+}
 
-    .S3ItemFooter {
-        @apply relative mt-3 w-full flex flex-nowrap content-start gap-3 overflow-clip;
-    }
+.S3ItemFooter {
+  @apply relative mt-3 w-full flex flex-nowrap content-start gap-3 overflow-clip;
+}
 
-        .S3FooterTag {
-            @apply select-none font-display font-semibold px-3 py-1 rounded-full bg-red-100 text-red-600 whitespace-nowrap text-xs
-        }
+.S3FooterTag {
+  @apply select-none font-display font-semibold px-3 py-1 rounded-full bg-teal-100 text-teal-600 whitespace-nowrap text-xs;
+}
 
 .S3ModalContainer {
-    @apply fixed w-screen h-screen top-0 left-0 flex flex-wrap content-center justify-items-center;
+  @apply fixed w-screen h-screen top-0 left-0 flex flex-wrap content-center justify-items-center;
 }
 
-    .S3ModalBackground {
-        @apply absolute w-full h-full z-[1] bg-neutral-950/50 top-0 left-0
-    }
+.S3ModalBackground {
+  @apply absolute w-full h-full z-[1] bg-neutral-950/50 top-0 left-0;
+}
 
-    .S3ModalContent {
-        @apply z-[2] p-8 bg-white rounded-lg border-neutral-200 shadow-2xl mx-auto self-center;
-    }
+.S3ModalContent {
+  @apply z-[2] p-8 bg-white rounded-lg border-neutral-200 shadow-2xl mx-auto self-center;
+}
 
-        .S3DocumentContainer {
-            @apply w-min h-[30rem] flex flex-col flex-nowrap content-start gap-4;
-        }
+.S3DocumentContainer {
+  @apply w-min h-[30rem] flex flex-col flex-nowrap content-start gap-4;
+}
 
-            .S3DocumentOptions {
-                @apply w-full flex flex-nowrap content-start font-display gap-4;
-            }
+.S3DocumentOptions {
+  @apply w-full flex flex-nowrap content-start font-display gap-4;
+}
 
-                .S3OptionsText {
-                    @apply relative flex-1 flex flex-wrap content-start overflow-clip;
-                }
+.S3OptionsText {
+  @apply relative flex-1 flex flex-wrap content-start overflow-clip;
+}
 
-                    .S3OptionsType {
-                        @apply font-semibold text-neutral-400;
-                    }
+.S3OptionsType {
+  @apply font-semibold text-neutral-400;
+}
 
-                    .S3OptionsName {
-                        @apply leading-4 font-bold text-lg text-neutral-600 whitespace-nowrap;
-                    }
+.S3OptionsName {
+  @apply leading-4 font-bold text-lg text-neutral-600 whitespace-nowrap;
+}
 
-                    .S3OptionsFade {
-                        @apply absolute w-[5rem] top-0 right-0 h-full bg-gradient-to-r from-transparent to-white;
-                    }
+.S3OptionsFade {
+  @apply absolute w-[5rem] top-0 right-0 h-full bg-gradient-to-r from-transparent to-white;
+}
 
-                .S3OptionsDownload {
-                    @apply px-3 text-white font-semibold bg-red-600 rounded-[0.25rem] stroke-white flex flex-nowrap content-start gap-1;
-                }
+.S3OptionsDownload {
+  @apply px-3 text-white font-semibold bg-teal-600 rounded-[0.25rem] stroke-white flex flex-nowrap content-start gap-1;
+}
 
-                    .S3DownloadSvg {
-                        @apply stroke-[2.5] self-center ml-auto w-5 h-5;
-                    }
+.S3DownloadSvg {
+  @apply stroke-[2.5] self-center ml-auto w-5 h-5;
+}
 
-                    .S3DownloadLabel {
-                        @apply self-center mr-auto
-                    }
+.S3DownloadLabel {
+  @apply self-center mr-auto;
+}
 
-            .Document {
-                @apply gap-8 font-display w-[875px] min-h-[1237px] flex flex-wrap content-start bg-[#F27C2E];
-            }
+.Document {
+  @apply gap-8 font-display w-[875px] min-h-[1237px] flex flex-wrap content-start bg-teal-500;
+}
 
-                .DocumentHeader {
-                    @apply relative w-full;
-                }
+.DocumentHeader {
+  @apply relative w-full;
+}
 
-                    .HeaderBackground {
-                        @apply absolute w-full h-full top-0 left-0 object-cover saturate-0;
-                    }
+.HeaderBackground {
+  @apply absolute w-full h-full top-0 left-0 object-cover saturate-0;
+}
 
-                    .HeaderFade {
-                        @apply absolute w-full h-full top-0 left-0 bg-gradient-to-t from-black/90 to-black/70 backdrop-blur-[2px];
-                    }
+.HeaderFade {
+  @apply absolute w-full h-full top-0 left-0 bg-gradient-to-t from-black/90 to-black/70 backdrop-blur-[2px];
+}
 
-                    .HeaderPreface {
-                        @apply text-black pt-12 px-14 w-full flex flex-nowrap content-start justify-between;
-                    }
+.HeaderPreface {
+  @apply text-black pt-12 px-14 w-full flex flex-nowrap content-start justify-between;
+}
 
-                        .PrefaceLabel {
-                            @apply self-center font-bold text-white text-3xl;
-                        }
+.PrefaceLabel {
+  @apply self-center font-bold text-white text-3xl;
+}
 
-                        .PrefaceLogo {
-                            @apply self-center h-16 w-auto fill-white;
-                        }
+.PrefaceLogo {
+  @apply self-center h-16 w-auto fill-white;
+}
 
-                .DocumentContent {
-                    @apply px-14 w-full flex flex-wrap content-start gap-8;
-                }
+.DocumentContent {
+  @apply px-14 w-full flex flex-wrap content-start gap-8;
+}
 
-                    .DocumentSection {
-                        @apply w-full p-8 rounded-lg border border-neutral-200 shadow-2xl bg-white;
-                    }
+.DocumentSection {
+  @apply w-full p-8 rounded-lg border border-neutral-200 shadow-2xl bg-white;
+}
 
-                        .SectionTitle {
-                            @apply mb-4 text-neutral-800 text-xl font-bold uppercase;
-                        }
+.SectionTitle {
+  @apply mb-4 text-neutral-800 text-xl font-bold uppercase;
+}
 
-                        .SectionRow {
-                            @apply w-full border-b py-2 border-neutral-300 flex flex-nowrap content-start justify-between
-                        }
+.SectionRow {
+  @apply w-full border-b py-2 border-neutral-300 flex flex-nowrap content-start justify-between;
+}
 
-                            .RowCategory {
-                                @apply w-1/2 font-bold text-neutral-500;
-                            }
+.RowCategory {
+  @apply w-1/2 font-bold text-neutral-500;
+}
 
-                            .RowData {
-                                @apply w-1/2 font-bold text-[#F27C2E];
-                            }
+.RowData {
+  @apply w-1/2 font-bold text-teal-600;
+}
